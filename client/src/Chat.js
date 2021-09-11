@@ -33,9 +33,9 @@ function Chat({ socket, username, room }) {
     <div className="fullcontainer">
       <div className="left">
         <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/zOjov-2OZ0E?controls=0"
+          width="95%"
+          height="95%"
+          src="https://www.youtube.com/embed/zOjov-2OZ0E?autoplay=1"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
