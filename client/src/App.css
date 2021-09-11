@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -12,7 +14,6 @@ body {
   margin: 0%;
   padding: 0%;
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
 .joinChatContainer {
   padding-left: 40%;
@@ -75,6 +76,7 @@ body {
   flex-direction: column;
   width: 95%;
   height: 95%;
+  color: black;
 }
 
 .chat-window p {
@@ -176,7 +178,7 @@ body {
 
 .chat-window .chat-body .message .message-meta {
   display: flex;
-  border: 0px solid #ffb703;
+  border: 0px solid black;
   font-size: 12px;
   border-radius: 15px;
 }
