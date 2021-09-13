@@ -18,7 +18,7 @@ const io = new Server(server, {
 io.on('connection', (socket) => {
   socket.on("unirse", (data) => {
     socket.join(data);
-    console.log(`Usuario con id ${socket.id} se conecto a la sala ${data}`)
+    console.log(`Usuario con id ${socket.id} se conecto`)
   })
   socket.on("send_message", (data) => {
     socket.to(data.room).emit("receive_message", data)
