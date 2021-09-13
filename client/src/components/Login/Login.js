@@ -3,7 +3,7 @@ import io from 'socket.io-client'
 import { useState } from 'react'
 import Chat from '../Chat/Chat'
 import React from 'react'
-import Logo from "../../images/Kuepa-EduTech.png"
+import Logo from '../../images/Kuepa-EduTech.png'
 
 const socket = io.connect('http://localhost:3001')
 
@@ -21,7 +21,7 @@ const Login = () => {
     <div className="App">
       {!showChat ? (
         <div className="joinChatContainer">
-          <img src={Logo} alt="Logo"/>
+          <img src={Logo} alt="Logo" />
           <h3>Login</h3>
           <input
             type="text"

@@ -16,17 +16,16 @@ const io = new Server(server, {
 })
 
 io.on('connection', (socket) => {
-  socket.on("unirse", (data) => {
-    socket.join(data);
+  socket.on('unirse', (data) => {
+    socket.join(data)
     console.log(`Usuario con id ${socket.id} se conecto`)
   })
-  socket.on("send_message", (data) => {
-    socket.to(data.room).emit("receive_message", data)
+  socket.on('send_message', (data) => {
+    socket.to(data.room).emit('receive_message', data)
   })
-  socket.on("disconnect", () => {
-  })
+  socket.on('disconnect', () => {})
 })
 
 server.listen(3001, () => {
-  console.log('listening on port 3001')
+  console.log('Server corriendo en puerto 3001')
 })
